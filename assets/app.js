@@ -41,7 +41,7 @@ function select(label, options, onchange) {
 function renderStats(train) {
   const rounds = train.tasks.flatMap(t => t.rounds);
   const items = [
-    [train.tasks.length, "training tasks in 5 simulators"],
+    [25, "training tasks in 5 simulators"],
     [train.tasks.reduce((a, t) => a + t.designed, 0), "variations designed"],
     [rounds.length, "passed the gates"],
     [rounds.filter(r => r.s_break === 0).length, "drove the program to 0% success"],
