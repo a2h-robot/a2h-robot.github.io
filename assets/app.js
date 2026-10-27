@@ -533,6 +533,7 @@ function renderTraining(train, videos) {
 
 // ---------------------------------------------------------------- harness
 async function renderHarness() {
+  if (!$("#harnessmd")) return;  // harness withheld until acceptance
   const txt = await fetch("data/harness.md", { cache: "no-store" }).then(r => (r.ok ? r.text() : "")).catch(() => "");
   const body = txt.replace(/<!--[\s\S]*?-->/g, "").trim();
   $("#harnessmd").innerHTML = window.marked ? marked.parse(body) : `<pre>${body.replace(/</g, "&lt;")}</pre>`;
