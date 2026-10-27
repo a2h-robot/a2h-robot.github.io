@@ -1,0 +1,93 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "1b843084"
+ },
+ {
+  "variation": "v1",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "6206916c"
+ },
+ {
+  "variation": "v1",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "1b843084"
+ },
+ {
+  "variation": "v2",
+  "kind": "before",
+  "seed_offset": 1,
+  "success": false,
+  "pipeline": "2d960b37"
+ },
+ {
+  "variation": "v2",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "1b843084"
+ },
+ {
+  "variation": "v3",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "270982fe"
+ },
+ {
+  "variation": "v3",
+  "kind": "after",
+  "seed_offset": 1,
+  "success": true,
+  "pipeline": "1b843084"
+ },
+ {
+  "variation": "v8",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "7342d09a"
+ },
+ {
+  "variation": "v8",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "1b843084"
+ },
+ {
+  "variation": "v9",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "1b843084"
+ },
+ {
+  "variation": "v9",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "1b843084"
+ },
+ {
+  "variation": "v10",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "1b843084"
+ },
+ {
+  "variation": "v10",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "1b843084"
+ }
+]

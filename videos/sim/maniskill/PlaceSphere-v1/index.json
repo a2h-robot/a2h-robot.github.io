@@ -1,0 +1,101 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "9c6c03a2",
+  "frames": 177
+ },
+ {
+  "variation": "v1",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": null,
+  "pipeline": "2bc29e56",
+  "frames": 140
+ },
+ {
+  "variation": "v1",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "9c6c03a2",
+  "frames": 191
+ },
+ {
+  "variation": "v2",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": null,
+  "pipeline": "b7024e64",
+  "frames": 213
+ },
+ {
+  "variation": "v2",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "9c6c03a2",
+  "frames": 225
+ },
+ {
+  "variation": "v3",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": null,
+  "pipeline": "900dbc69",
+  "frames": 223
+ },
+ {
+  "variation": "v3",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "9c6c03a2",
+  "frames": 174
+ },
+ {
+  "variation": "v4",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": null,
+  "pipeline": "13968a6c",
+  "frames": 239
+ },
+ {
+  "variation": "v4",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "9c6c03a2",
+  "frames": 158
+ },
+ {
+  "variation": "v5",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": null,
+  "pipeline": "5c08e028",
+  "frames": 164
+ },
+ {
+  "variation": "v5",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "9c6c03a2",
+  "frames": 255
+ }
+]

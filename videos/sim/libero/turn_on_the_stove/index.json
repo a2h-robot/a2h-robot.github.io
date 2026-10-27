@@ -1,0 +1,38 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "ee403877"
+ },
+ {
+  "variation": "v1",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "c7322696"
+ },
+ {
+  "variation": "v1",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "ee403877"
+ },
+ {
+  "variation": "v2",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "0250794a"
+ },
+ {
+  "variation": "v2",
+  "kind": "after",
+  "seed_offset": 1,
+  "success": false,
+  "pipeline": "ee403877",
+  "unsolved": true
+ }
+]

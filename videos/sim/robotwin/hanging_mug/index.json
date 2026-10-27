@@ -1,0 +1,128 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "7e634161"
+ },
+ {
+  "variation": "v1",
+  "kind": "before",
+  "seed_offset": 1,
+  "success": false,
+  "pipeline": "64d82304"
+ },
+ {
+  "variation": "v1",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "7e634161"
+ },
+ {
+  "variation": "v5",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "38bd6e6d"
+ },
+ {
+  "variation": "v5",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "7e634161"
+ },
+ {
+  "variation": "v7",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "134116c2"
+ },
+ {
+  "variation": "v7",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "7e634161"
+ },
+ {
+  "variation": "v8",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "9d9470c4"
+ },
+ {
+  "variation": "v8",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "7e634161"
+ },
+ {
+  "variation": "v12",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "7e634161"
+ },
+ {
+  "variation": "v13",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "76e9850e"
+ },
+ {
+  "variation": "v13",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "7e634161"
+ },
+ {
+  "variation": "v16",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "0f1bc116"
+ },
+ {
+  "variation": "v16",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "7e634161"
+ },
+ {
+  "variation": "v17",
+  "kind": "before",
+  "seed_offset": 1,
+  "success": false,
+  "pipeline": "eb9d26ab"
+ },
+ {
+  "variation": "v17",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "7e634161"
+ },
+ {
+  "variation": "v20",
+  "kind": "before",
+  "seed_offset": 1,
+  "success": false,
+  "pipeline": "cab50cf4"
+ },
+ {
+  "variation": "v20",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "7e634161"
+ }
+]

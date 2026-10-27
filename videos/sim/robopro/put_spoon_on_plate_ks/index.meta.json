@@ -1,0 +1,21 @@
+{
+ "bench": "robopro",
+ "task": "put_spoon_on_plate_ks",
+ "branch": "d-robopro-put_spoon_on_plate_ks",
+ "branch_head": "221796e",
+ "final_pipeline": "a5f93756 (round 3; rounds 4-5 unsolved and reverted)",
+ "recorder": "website/tools/record_eval.py job list, pipeline_at() and run_eval() (imported unchanged) driven by rec_split.py so two processes share the clips; eval args --local 1 --no-video-flag",
+ "before_pipeline_check": "for every gate, the commit record_eval picks has a pipeline.py blob equal to the gate's frozen_pipeline; this needs TZ=UTC because the gates ran on UTC nodes (gate times are naive)",
+ "capture": "patch_video_robotwin.py as of origin/main 360d8cb (old sampling): a 320x240 head-camera frame on every 4th _step/_hold call and on every public API call, written at 8 fps; capture covers the pipeline run, not the 50 settle steps (0.2 s) before the success check",
+ "trees": {
+  "raw": "mp4 exactly as the patch writes it (8 fps, plays ~8x slower than sim time)",
+  "realtime": "same frames, retimed with ffmpeg -itsscale (no re-encode) to rt_fps = n_frames / captured_sim_s; frame gaps are uneven in sim time (dense during arm motion, sparse during holds), so motion plays near 1x and holds are compressed"
+ },
+ "fields": {
+  "sim_steps": "simulation steps incl. the 50 settle steps (DT = 1/250 s)",
+  "episode_sim_s": "sim_steps * DT",
+  "captured_sim_s": "sim time covered by the capture: (sim_steps - 50) * DT, or sim_steps * DT when the step limit ended the episode",
+  "wall_clock_s": "episode wall clock on a shared GB10 (rendering every frame dominates)",
+  "tries": "every seed offset run for this clip, in order; the clip is the last try (record_eval rule)"
+ }
+}

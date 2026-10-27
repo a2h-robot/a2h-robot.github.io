@@ -1,0 +1,16 @@
+{
+ "bench": "robopro",
+ "task": "pick_boxdrink_from_basket",
+ "camera": "countertop",
+ "camera_note": "countertop static camera; the head and front cameras do not show the basket or the box in this kitchen scene, so this task's clips differ in viewpoint from head-camera clips",
+ "capture": "website/tools/patch_video_robotwin.py with the capture camera set to the countertop camera; a frame every 4th _step/_hold call and after each public API call; 320x240",
+ "realtime": "uniform 25 fps sim-time grid from per-frame sim steps (dt = 1/250 s)",
+ "settle_note": "the success check runs after a 0.2 s settle hold; last_frame_to_judgement_s gives the gap",
+ "unsolved": [
+  "v3"
+ ],
+ "before_pipeline_tz": "gate.json times are naive UTC; recorded with TZ=UTC (each before blob matches the gate's frozen_pipeline)",
+ "machines_note": "clips were recorded on two GB10s of the same type (aarch64, the same RoboPRO tree and backend commit); each entry names its machine. wall_clock_s depends on node load: the direct-attached GB10 was shared by 7 simulations, the cluster node was not",
+ "tries_note": "each entry lists every try in order; the kept clip is the first try whose outcome matched (before=fail, after=success), except unsolved variations (see unsolved_rule)",
+ "unsolved_rule": "for a variation marked unsolved (v3) the delivered 'after' clip is offset 0, unsearched, whatever it shows; every other clip is the first offset whose outcome matched"
+}

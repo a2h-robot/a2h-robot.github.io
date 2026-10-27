@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A²H: Agentic Adversarial Harness</title>
+<meta name="description" content="A2H: learning an agentic adversarial harness by breaking your own robot programs. CoRL 2026 Late-Breaking Results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<a class="skip" href="#tldr">Skip to content</a>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="venue">CoRL 2026 · Late-Breaking Results · Austin, TX</p>
+    <h1>A<sup>2</sup>H: Learning an Agentic Adversarial Harness<br>by Breaking Your Own Robot Programs</h1>
+    <p class="authors">Zhiyuan Li<sup>1</sup>, Dingsheng Liu<sup>1</sup>, Amir Rasouli<sup>2</sup></p>
+    <p class="affil"><sup>1</sup>University of Toronto &nbsp; <sup>2</sup>Huawei Technologies Canada</p>
+    <nav class="buttons">
+      <a class="btn btn-primary" href="assets/paper.pdf">Paper (PDF)</a>
+      <a class="btn" href="#clips">Before / after clips</a>
+      <a class="btn" href="#harness">The harness</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="subnav" aria-label="Sections">
+  <div class="wrap subnav-in">
+    <a href="#method">Method</a>
+    <a href="#clips">Clips</a>
+    <a href="#real">Real robot</a>
+    <a href="#training">Training</a>
+    <a href="#harness">Harness</a>
+    <a href="#cite">Cite</a>
+    <button class="themebtn" id="themebtn" type="button" aria-label="Switch colour theme" title="Switch colour theme"></button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="tldr">
+  <p class="lede">Coding agents write robot programs that work on the scene in front of them and break when the scene changes.
+  In <b>A<sup>2</sup>H</b>, one agent solves a simulated task, then designs scene changes that break its own program, repairs it,
+  and writes down why it missed the weakness. The lessons from tasks in five simulation benchmarks become one short Markdown harness
+  that a fresh agent reads before writing a program for an unseen task on a real robot.</p>
+  <div class="stats" id="stats"></div>
+</section>
+
+<section id="method">
+  <h2>Method</h2>
+  <figure class="paperfig">
+    <img src="assets/fig_method.png" alt="A2H overview: solve, design an augmentation, gate, repair, reflect, distill a harness, deploy zero-shot on a real robot">
+  </figure>
+  <div class="cols">
+    <div>
+      <h3>Training in simulation</h3>
+      <p>A variation is accepted only if a gate tool, running a frozen copy of the pre-round program, sees success fall to at most half of s₀,
+      the change is not a third parameter tweak in a row, and the evaluator is untouched. The agent then repairs the program until it
+      reaches τ = 0.8 on the base task <i>and</i> on every earlier constraint, since each constraint may or may not appear at test time.
+      Every round ends with a reflection whose general rule names no task or object.</p>
+    </div>
+    <div>
+      <h3>Deployment on the real robot</h3>
+      <p>A fresh agent gets the task goal, the robot API and the harness. It may observe the scene with read-only perception calls; the robot
+      moves only when the operator runs a submitted program. Each run is one attempt, at most four. We report pass@1 (the first time the
+      robot moves, it succeeds) and pass@4, against the same agent without the harness.</p>
+    </div>
+  </div>
+
+  <details class="protocol" id="protocol">
+    <summary>Full training and deployment protocol</summary>
+    <div class="protocol-body">
+      <h3>Setting</h3>
+      <p>A coding agent receives a task <i>e</i> with a language goal and a scene. It writes a pipeline <i>p</i>, a single script or a set of
+      skills driven by a state machine. <i>s(p, e)</i> is the success rate of <i>p</i> on <i>e</i> over 10 seeds. A variation <i>v</i> changes one
+      aspect of the scene; the designed task <i>e ⊕ v</i> keeps the goal and the success function of <i>e</i>. All training happens in simulation,
+      where the agent can break its programs safely.</p>
+
+      <h3>Shared robot API</h3>
+      <p>The agent never reads simulator state. Every backend, simulated or real, exposes the same Python API:
+      perception (<code>detect</code>, <code>get_obstacles</code>, <code>track</code>, <code>camera_frame</code>),
+      motion (<code>move_to</code> with obstacles to avoid, <code>grasp</code> with a grip strength, <code>place</code>,
+      <code>open_gripper</code>, <code>close_gripper</code>, <code>wait_until</code>) and state checks (<code>tcp_pose</code>,
+      <code>gripper_holding</code>, <code>in_region</code>). Simulated detections carry 1 cm and 3° of noise, so a program cannot rely on exact
+      simulator state. Because the vocabulary is shared, a rule learned in one simulator names the same calls on the real robot.</p>
+
+      <h3>Constraints that may or may not appear</h3>
+      <p>Each accepted variation is one more constraint on the task. After <i>k</i> rounds the agent holds
+      <i>C<sub>k</sub> = {v<sub>1</sub>, …, v<sub>k</sub>}</i>, and the task it must solve is
+      <i>e ⊕ {v<sub>j</sub> ∈ C<sub>k</sub> : b<sub>j</sub> = 1}</i> with <i>b<sub>j</sub> ~ Bernoulli(π<sub>j</sub>)</i>, where
+      <i>π<sub>j</sub></i> is the unknown chance that constraint <i>v<sub>j</sub></i> is present. A good pipeline succeeds whether or not each
+      constraint appears. In training we check the base task and every constraint on its own:
+      <i>s(p, e) ≥ τ</i> and <i>s(p, e ⊕ v<sub>j</sub>) ≥ τ</i> for every <i>v<sub>j</sub></i>.</p>
+
+      <h3>Training loop (one run per task)</h3>
+      <ol>
+        <li><b>Solve.</b> Write <i>p</i> and evaluate it on 10 seeds until <i>s(p, e) ≥ τ</i>, with τ = 0.8. Record <i>s<sub>0</sub> = s(p, e)</i>.</li>
+        <li><b>Question and design.</b> List the assumptions the pipeline makes about the scene, pick the one a real robot is most likely to
+        violate and that has not been attacked yet, and write a variation that violates it. Variations are scene edits from a fixed
+        vocabulary: object pose, orientation and size, mass and friction, distractors, obstacles, object motion during execution, lighting,
+        and camera pose. The scene must stay physically solvable.</li>
+        <li><b>Gates.</b> A gate tool, not the agent, decides. It runs a frozen copy of the pipeline from before the round.
+          <ul>
+            <li><i>Break gate:</i> the frozen pipeline must lose at least half its performance, <i>s(p, e ⊕ v) ≤ s<sub>0</sub>/2</i>.</li>
+            <li><i>Variance gate:</i> pure parameter tuning (for example, moving the same object further in the same direction) may break the
+            pipeline at most two times in a row; the next variation must change a different aspect. The agent labels each variation and the
+            tool checks the label against the previous one.</li>
+            <li><i>Validity and integrity:</i> scenes that are invalid at reset (objects falling or interpenetrating) are rejected, and a hash
+            of the success function and the tools stops the agent from passing a gate by editing the evaluator.</li>
+          </ul>
+          A rejected variation sends the agent back to step 2.</li>
+        <li><b>Recover.</b> Repair the pipeline, at most 6 iterations, until it reaches τ on the new variation without dropping below τ on the
+        base task or any earlier constraint. Otherwise the variation is marked <i>unsolved</i>, the pipeline is reverted, and the variation does
+        not join <i>C</i>; it still produces a reflection.</li>
+        <li><b>Reflect.</b> One entry per round: the weakness, how it was found, why it was missed, the fix, and a one-sentence general rule
+        that names no task or object, marked novel or not with respect to earlier entries.</li>
+        <li><b>Converge.</b> Return to step 2 with the repaired pipeline. Stop after five accepted variations or two consecutive accepted
+        rounds whose rules are not novel.</li>
+      </ol>
+<pre class="algo">p ← A(e);  s0 ← s(p, e);  C ← ∅;  R ← ∅;  n_tune ← 0
+while |C| &lt; 5 and the last two accepted rules are not both non-novel:
+    v ← A.DesignTask(p, e)                       # question the pipeline
+    if v is parameter tuning and n_tune ≥ 2: reject v      # variance gate
+    if s(p, e ⊕ v) &gt; s0 / 2: reject v                      # break gate, frozen p
+    n_tune ← n_tune + 1 if v is parameter tuning else 0
+    p' ← p
+    repeat p' ← A.Repair(p', e ⊕ v)              # at most 6 times
+    until s(p', e) ≥ τ and s(p', e ⊕ v') ≥ τ for all v' in C ∪ {v}
+    if recovered: p ← p';  C ← C ∪ {v}           # new constraint
+    R ← R ∪ A.Reflect(p, v)                      # also for unsolved v
+return R</pre>
+
+      <h3>Summarizing the harness</h3>
+      <p>After all runs, a fresh agent reads every reflection and writes the harness <i>H</i>, a Markdown file of at most 800 words. It keeps
+      only lessons supported by at least one reflection, names no training task or object, merges duplicates and orders rules by how many
+      failures they would have prevented. Each rule carries one line on the failure it prevents. <i>H</i> has four sections: questions to ask
+      before writing code, constraints every program must satisfy, self-checks to run without a simulator, and a workflow. A hidden source
+      map links every rule to its reflections. For a real task that also appears in training (hanging mug, plug charger), the harness is
+      built leave-one-out from all other reflections. The harness used on the robot is <a href="#harness">below</a>.</p>
+
+      <h3>Deployment protocol</h3>
+      <p>A fresh agent gets an unseen real task with no simulator, no access to training tasks and no human supervisor. Before writing, it may
+      inspect the scene with read-only perception calls, which never move the robot and do not count as attempts. The robot moves only when
+      the operator runs a submitted program through a runner that enforces velocity, acceleration and workspace limits; each run is one
+      attempt. After a failure the agent sees camera frames and the execution log, revises, and tries again, for at most four attempts,
+      following the single- and multi-turn protocols of CaP-X with the number of turns capped. Every attempt records all camera videos,
+      the robot state, every API call, tokens, time, failure type and safety events.</p>
+    </div>
+  </details>
+</section>
+
+<section id="clips">
+  <h2>Breaking and repairing, on video</h2>
+  <p>Highlights shows one run per simulator as a set of six: the same final program on the base task, then on each
+  constraint it had to absorb, in the order they were added. Open a simulator to go task by task, where each round is
+  a pair — the program frozen at the gate, then the program after the repair. Every clip is a single episode from
+  the simulator, not a montage.</p>
+  <div class="tabs tabs-bench" id="benchtabs" role="tablist" aria-label="Simulator"></div>
+  <div class="tabs" id="cliptabs" role="tablist" aria-label="Task"></div>
+  <div class="panelhead">
+    <p class="count" id="clipcount"></p>
+    <div class="filters" id="clipfilters"></div>
+  </div>
+  <div id="clipgrid" role="tabpanel"></div>
+  <details class="readme">
+    <summary>How to read these clips</summary>
+    <div class="readme-body">
+      <ul>
+        <li><b>A gate passes when a variation <i>breaks</i> the program.</b> Recovery is a separate step. Where a
+        variation is marked <span class="pill bad">unsolved</span>, the repair never reached the threshold, so the
+        right-hand clip is not a fix: it is the final program failing, or occasionally succeeding on a lucky seed.</li>
+        <li><b>Some pairs run identical code.</b> If no later variation was accepted, the frozen program <i>is</i> the
+        final program, and the two clips differ only by simulator nondeterminism. Those are labelled
+        <span class="pill">same program</span>.</li>
+        <li><b>Seeds are searched, not sampled.</b> The recorder tries up to three seeds until the outcome matches
+        expectation, so a clip marked <span class="pill">seed searched</span> is the draw that matched, and the
+        variation's measured success rate matters more than the single episode you are watching.</li>
+        <li><b>Run-to-run variance is real.</b> Re-running identical code and seeds, 2 of 21 episodes flipped outcome.</li>
+        <li>Clips end when the program returns, about a second of simulated time before the success check settles, so an
+        object may still be moving in the final frame.</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<section id="real">
+  <h2>Real-robot evaluation</h2>
+  <p>A UR5e arm with a Robotiq 2F-140 gripper and three RealSense cameras. Four tasks, each testing one challenge. A fresh agent
+  writes the program zero-shot; we compare no harness (Baseline), a harness from recursive self-improvement on the same training
+  tasks (RSI Harness), and A<sup>2</sup>H. pass@1 is the success rate at the first attempt, pass@4 within four attempts; cost is the
+  token cost in dollars.</p>
+  <figure class="paperfig narrow"><img src="assets/fig_real.png" alt="The four real-robot tasks: Hanging Mug, Plug Charger, Cup on Shelf, Sort Marbles"></figure>
+  <div class="tablewrap"><table class="results">
+<thead><tr><th rowspan="2">Task</th><th colspan="3">Baseline</th><th colspan="3">RSI Harness</th><th colspan="3">A<sup>2</sup>H</th></tr>
+<tr><th>pass@1</th><th>pass@4</th><th>Cost ($)</th><th>pass@1</th><th>pass@4</th><th>Cost ($)</th><th>pass@1</th><th>pass@4</th><th>Cost ($)</th></tr></thead>
+<tbody>
+<tr><td>Sort Marbles</td><td>20%</td><td>45%</td><td>8.4</td><td>60%</td><td>55%</td><td>15.9</td><td class="best">100%</td><td class="best">100%</td><td>12.0</td></tr>
+<tr><td>Cup on Shelf</td><td>0%</td><td>35%</td><td>14.5</td><td>20%</td><td>50%</td><td>20.2</td><td class="best">60%</td><td class="best">100%</td><td>19.1</td></tr>
+<tr><td>Plug Charger</td><td>0%</td><td>15%</td><td>19.5</td><td>0%</td><td>20%</td><td>35.5</td><td class="best">60%</td><td class="best">100%</td><td>28.5</td></tr>
+<tr><td>Hanging Mug</td><td>0%</td><td>15%</td><td>23.4</td><td>0%</td><td>25%</td><td>43.1</td><td class="best">20%</td><td class="best">80%</td><td>40.0</td></tr>
+<tr class="avg"><td>Average</td><td>5%</td><td>27.5%</td><td>16.5</td><td>20%</td><td>37.5%</td><td>28.7</td><td class="best">60%</td><td class="best">95%</td><td>24.9</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="training">
+  <h2>What the agent broke in simulation</h2>
+  <p>Every variation that passed the gates, across the training tasks in five simulators. Bars show success of the frozen program before (s₀),
+  under the variation (s_break), and after repair.</p>
+  <div class="charts">
+    <div class="chart" id="axischart"></div>
+    <div class="chart" id="benchchart"></div>
+  </div>
+  <div class="filters" id="trainfilters"></div>
+  <p class="count" id="traincount"></p>
+  <div id="rounds" class="rounds"></div>
+</section>
+
+<section id="harness">
+  <h2>The learned harness</h2>
+  <p>The leave-one-out harness used on the real robot (hanging mug and plug charger excluded from its sources). This is the whole text the agent reads.</p>
+  <article class="md" id="harnessmd">Loading…</article>
+</section>
+
+<section id="cite">
+  <h2>Citation</h2>
+<pre class="bib">@inproceedings{li2026a2h,
+  title     = {{A$^2$H}: Learning an Agentic Adversarial Harness by Breaking Your Own Robot Programs},
+  author    = {Li, Zhiyuan and Liu, Dingsheng and Rasouli, Amir},
+  booktitle = {Conference on Robot Learning (CoRL), Late-Breaking Results},
+  year      = {2026}
+}</pre>
+</section>
+
+</main>
+<footer class="wrap foot">A<sup>2</sup>H · CoRL 2026 Late-Breaking Results</footer>
+
+<template id="tpl-round">
+  <details class="round">
+    <summary>
+      <span class="badge"></span><span class="axis"></span><span class="title"></span>
+      <span class="bars"></span>
+    </summary>
+    <div class="body"></div>
+  </details>
+</template>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

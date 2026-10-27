@@ -1,0 +1,79 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "df0333d6"
+ },
+ {
+  "variation": "v1",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "c828fd88"
+ },
+ {
+  "variation": "v1",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "df0333d6"
+ },
+ {
+  "variation": "v2",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "be00f28c"
+ },
+ {
+  "variation": "v2",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "df0333d6"
+ },
+ {
+  "variation": "v3",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "eada9e71"
+ },
+ {
+  "variation": "v3",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "df0333d6"
+ },
+ {
+  "variation": "v4",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "98c9e688"
+ },
+ {
+  "variation": "v4",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "df0333d6"
+ },
+ {
+  "variation": "v5",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "ee179217"
+ },
+ {
+  "variation": "v5",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "df0333d6"
+ }
+]

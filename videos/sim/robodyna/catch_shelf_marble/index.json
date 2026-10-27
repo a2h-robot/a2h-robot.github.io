@@ -1,0 +1,53 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "5e19eae7"
+ },
+ {
+  "variation": "v2",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "73a91448"
+ },
+ {
+  "variation": "v2",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "5e19eae7"
+ },
+ {
+  "variation": "v4",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "5e19eae7"
+ },
+ {
+  "variation": "v4",
+  "kind": "after",
+  "seed_offset": 1,
+  "success": false,
+  "pipeline": "5e19eae7",
+  "unsolved": true
+ },
+ {
+  "variation": "v7",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "5e19eae7"
+ },
+ {
+  "variation": "v7",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "5e19eae7",
+  "unsolved": true
+ }
+]

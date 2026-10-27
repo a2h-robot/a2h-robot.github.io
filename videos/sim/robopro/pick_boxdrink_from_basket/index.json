@@ -1,0 +1,311 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "48831b5f",
+  "machine": "GB10 A (direct-attached)",
+  "seed": 40000,
+  "camera": "countertop",
+  "n_frames": 2102,
+  "sim_steps": 7757,
+  "episode_sim_s": 31.03,
+  "wall_clock_s": 831,
+  "avg_fps": 67.75,
+  "last_frame_to_judgement_s": 0.0,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": true
+   }
+  ],
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ },
+ {
+  "variation": "v1",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "6910a0a7",
+  "machine": "GB10 A (direct-attached)",
+  "seed": 40000,
+  "camera": "countertop",
+  "n_frames": 1789,
+  "sim_steps": 6822,
+  "episode_sim_s": 27.29,
+  "wall_clock_s": 711,
+  "avg_fps": 65.56,
+  "last_frame_to_judgement_s": 0.2,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": false
+   }
+  ],
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ },
+ {
+  "variation": "v1",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "48831b5f",
+  "machine": "GB10 A (direct-attached)",
+  "seed": 40000,
+  "camera": "countertop",
+  "n_frames": 2593,
+  "sim_steps": 9730,
+  "episode_sim_s": 38.92,
+  "wall_clock_s": 1038,
+  "avg_fps": 66.62,
+  "last_frame_to_judgement_s": 0.0,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": true
+   }
+  ],
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ },
+ {
+  "variation": "v2",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "3408f4f6",
+  "machine": "GB10 A (direct-attached)",
+  "seed": 40000,
+  "camera": "countertop",
+  "n_frames": 3266,
+  "sim_steps": 12655,
+  "episode_sim_s": 50.62,
+  "wall_clock_s": 1076,
+  "avg_fps": 64.52,
+  "last_frame_to_judgement_s": 0.2,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": false
+   }
+  ],
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ },
+ {
+  "variation": "v2",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "48831b5f",
+  "machine": "GB10 A (direct-attached)",
+  "seed": 40000,
+  "camera": "countertop",
+  "n_frames": 3215,
+  "sim_steps": 12192,
+  "episode_sim_s": 48.77,
+  "wall_clock_s": 1052,
+  "avg_fps": 65.92,
+  "last_frame_to_judgement_s": 0.2,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": true
+   }
+  ],
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ },
+ {
+  "variation": "v3",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "ab918cce",
+  "machine": "GB10 A (direct-attached)",
+  "seed": 40000,
+  "camera": "countertop",
+  "n_frames": 1798,
+  "sim_steps": 6670,
+  "episode_sim_s": 26.68,
+  "wall_clock_s": 761,
+  "avg_fps": 67.39,
+  "last_frame_to_judgement_s": 0.2,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": false
+   }
+  ],
+  "label": "UNSOLVED variation: no repair reached TAU; 'after' is the final pipeline, which does not solve it",
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ },
+ {
+  "variation": "v3",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "48831b5f",
+  "machine": "GB10 A (direct-attached)",
+  "seed": 40000,
+  "camera": "countertop",
+  "n_frames": 1787,
+  "sim_steps": 6408,
+  "episode_sim_s": 25.63,
+  "wall_clock_s": 697,
+  "avg_fps": 69.72,
+  "last_frame_to_judgement_s": 0.2,
+  "outcome_matches": false,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": false
+   },
+   {
+    "seed_offset": 1,
+    "seed": 40001,
+    "success": true
+   }
+  ],
+  "label": "UNSOLVED variation. Delivered clip = offset 0, unsearched (rule for unsolved variations: ship offset 0 whatever it shows); the final pipeline fails this seed. The final pipeline does solve some v3 seeds (offset 1 succeeds; that searched clip is kept outside this tree), but not >= TAU.",
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid",
+  "selection": "fixed offset 0, unsearched"
+ },
+ {
+  "variation": "v4",
+  "kind": "before",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "ab918cce",
+  "machine": "GB10 B (cluster node)",
+  "seed": 40002,
+  "camera": "countertop",
+  "n_frames": 1974,
+  "sim_steps": 7393,
+  "episode_sim_s": 29.57,
+  "wall_clock_s": 118,
+  "avg_fps": 66.75,
+  "last_frame_to_judgement_s": 0.0,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": true
+   },
+   {
+    "seed_offset": 1,
+    "seed": 40001,
+    "success": true
+   },
+   {
+    "seed_offset": 2,
+    "seed": 40002,
+    "success": false
+   }
+  ],
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ },
+ {
+  "variation": "v4",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "48831b5f",
+  "machine": "GB10 B (cluster node)",
+  "seed": 40000,
+  "camera": "countertop",
+  "n_frames": 2225,
+  "sim_steps": 8154,
+  "episode_sim_s": 32.62,
+  "wall_clock_s": 302,
+  "avg_fps": 68.22,
+  "last_frame_to_judgement_s": 0.2,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": true
+   }
+  ],
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ },
+ {
+  "variation": "v5",
+  "kind": "before",
+  "seed_offset": 1,
+  "success": false,
+  "pipeline": "35ae9265",
+  "machine": "GB10 B (cluster node)",
+  "seed": 40001,
+  "camera": "countertop",
+  "n_frames": 2730,
+  "sim_steps": 10532,
+  "episode_sim_s": 42.13,
+  "wall_clock_s": 217,
+  "avg_fps": 64.8,
+  "last_frame_to_judgement_s": 0.2,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": true
+   },
+   {
+    "seed_offset": 1,
+    "seed": 40001,
+    "success": false
+   }
+  ],
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ },
+ {
+  "variation": "v5",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "48831b5f",
+  "machine": "GB10 B (cluster node)",
+  "seed": 40000,
+  "camera": "countertop",
+  "n_frames": 2625,
+  "sim_steps": 9715,
+  "episode_sim_s": 38.86,
+  "wall_clock_s": 144,
+  "avg_fps": 67.55,
+  "last_frame_to_judgement_s": 0.2,
+  "outcome_matches": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40000,
+    "success": true
+   }
+  ],
+  "fps": 25,
+  "timing": "real time in sim time: uniform 25 fps sim-time grid"
+ }
+]

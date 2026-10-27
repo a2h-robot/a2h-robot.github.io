@@ -1,0 +1,101 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "2f745344",
+  "frames": 166
+ },
+ {
+  "variation": "v1",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": null,
+  "pipeline": "2a127f9f",
+  "frames": 458
+ },
+ {
+  "variation": "v1",
+  "kind": "after",
+  "seed": 4,
+  "success": false,
+  "error": null,
+  "pipeline": "2f745344",
+  "frames": 966
+ },
+ {
+  "variation": "v2",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": null,
+  "pipeline": "2a127f9f",
+  "frames": 827
+ },
+ {
+  "variation": "v2",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "2f745344",
+  "frames": 219
+ },
+ {
+  "variation": "v3",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": "episode exceeded 2000 control steps",
+  "pipeline": "d8d089ac",
+  "frames": 1030
+ },
+ {
+  "variation": "v3",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "2f745344",
+  "frames": 250
+ },
+ {
+  "variation": "v4",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": null,
+  "pipeline": "40084405",
+  "frames": 383
+ },
+ {
+  "variation": "v4",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "2f745344",
+  "frames": 241
+ },
+ {
+  "variation": "v5",
+  "kind": "before",
+  "seed": 0,
+  "success": false,
+  "error": null,
+  "pipeline": "951eb379",
+  "frames": 492
+ },
+ {
+  "variation": "v5",
+  "kind": "after",
+  "seed": 0,
+  "success": true,
+  "error": null,
+  "pipeline": "2f745344",
+  "frames": 299
+ }
+]

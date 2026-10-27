@@ -1,0 +1,2489 @@
+{
+ "real": [],
+ "sim": [
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/base__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v1__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v1__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v2__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v2__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v3__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v3__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v4__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v4__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v5__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "open_the_middle_drawer_of_the_cabinet",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/open_the_middle_drawer_of_the_cabinet/v5__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/base__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v1",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v1__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v1__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v2__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v2__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v3__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v3__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v4__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v4__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v5",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v5__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v5__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v6",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v6__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "push_the_plate_to_the_front_of_the_stove",
+   "variation": "v6",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/push_the_plate_to_the_front_of_the_stove/v6__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/base__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v1__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v1__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v2__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v2__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v3__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v3__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v4",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v4__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v4__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v5__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v5__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v6",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v6__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_cream_cheese_in_the_bowl",
+   "variation": "v6",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_cream_cheese_in_the_bowl/v6__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/base__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v1__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v1__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v2__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v2__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v3__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v3__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v4__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v4__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v5__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "put_the_wine_bottle_on_the_rack",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/put_the_wine_bottle_on_the_rack/v5__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "turn_on_the_stove",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/turn_on_the_stove/base__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "turn_on_the_stove",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/libero/turn_on_the_stove/v1__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "turn_on_the_stove",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/turn_on_the_stove/v1__before.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "turn_on_the_stove",
+   "variation": "v2",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/turn_on_the_stove/v2__after.mp4"
+  },
+  {
+   "bench": "libero",
+   "task": "turn_on_the_stove",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/libero/turn_on_the_stove/v2__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/base__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v1__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": 1,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v1__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v2__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v2__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v3__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v3__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v4__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v4__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v5__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v5__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v6",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v6__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "LiftPegUpright-v1",
+   "variation": "v6",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/LiftPegUpright-v1/v6__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/base__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v11",
+   "kind": "after",
+   "success": true,
+   "seed": 1,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v11__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v11",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v11__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v13",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v13__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v13",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v13__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v2__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v2__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v4",
+   "kind": "after",
+   "success": false,
+   "seed": 4,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v4__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v4__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v6",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v6__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v6",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v6__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v9",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v9__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PegInsertionSide-v1",
+   "variation": "v9",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PegInsertionSide-v1/v9__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/base__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v1__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v1__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v2__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v2__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v3__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v3__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v4__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v4__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v5__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlaceSphere-v1",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlaceSphere-v1/v5__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/base__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v1",
+   "kind": "after",
+   "success": false,
+   "seed": 4,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v1__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v1__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v2__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v2__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v3__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v3__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v4__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v4__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v5__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PlugCharger-v1",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PlugCharger-v1/v5__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/base__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v1__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v1__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v2__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v2__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v3",
+   "kind": "after",
+   "success": false,
+   "seed": 4,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v3__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v3__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v4__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v4__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v5__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v5__before.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v6",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v6__after.mp4"
+  },
+  {
+   "bench": "maniskill",
+   "task": "PullCubeTool-v1",
+   "variation": "v6",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/maniskill/PullCubeTool-v1/v6__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_shelf_marble",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_shelf_marble/base__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_shelf_marble",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_shelf_marble/v2__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_shelf_marble",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_shelf_marble/v2__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_shelf_marble",
+   "variation": "v4",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_shelf_marble/v4__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_shelf_marble",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_shelf_marble/v4__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_shelf_marble",
+   "variation": "v7",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_shelf_marble/v7__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_shelf_marble",
+   "variation": "v7",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_shelf_marble/v7__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/base__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v1__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v1__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v2__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v2__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v3__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v3__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v4",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v4__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v4__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v5__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "catch_valley_ball",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/catch_valley_ball/v5__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/base__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v1__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v1__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v2__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v2__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v3__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v3__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v4__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v4__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v5",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v5__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "drop_ball_hole",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/drop_ball_hole/v5__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "pick_ripe_apple",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/pick_ripe_apple/base__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "pick_ripe_apple",
+   "variation": "v1",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/pick_ripe_apple/v1__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "pick_ripe_apple",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/pick_ripe_apple/v1__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "pick_ripe_apple",
+   "variation": "v4",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/pick_ripe_apple/v4__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "pick_ripe_apple",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/pick_ripe_apple/v4__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "pick_ripe_apple",
+   "variation": "v6",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/pick_ripe_apple/v6__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "pick_ripe_apple",
+   "variation": "v6",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/pick_ripe_apple/v6__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/base__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v10",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v10__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v10",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v10__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v11",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v11__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v11",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v11__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v1__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v1__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v3",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v3__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v3__before.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v5__after.mp4"
+  },
+  {
+   "bench": "robodyna",
+   "task": "place_block_belt",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robodyna/place_block_belt/v5__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": 40000,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/base__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": 40000,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v1__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": 40000,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v1__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": 40000,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v2__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": 40000,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v2__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v3",
+   "kind": "after",
+   "success": false,
+   "seed": 40000,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v3__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": 40000,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v3__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": 40000,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v4__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": 40002,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v4__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": 40000,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v5__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "pick_boxdrink_from_basket",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": 40001,
+   "src": "videos/sim/robopro/pick_boxdrink_from_basket/v5__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/base__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v1__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v1__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v2__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v2__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v3__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v3__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v4",
+   "kind": "after",
+   "success": false,
+   "seed": 3,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v4__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v4__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v6",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v6__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v6",
+   "kind": "before",
+   "success": false,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v6__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v7",
+   "kind": "after",
+   "success": true,
+   "seed": 3,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v7__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v7",
+   "kind": "before",
+   "success": false,
+   "seed": 1,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v7__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v8",
+   "kind": "after",
+   "success": true,
+   "seed": 0,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v8__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_cup_on_coaster",
+   "variation": "v8",
+   "kind": "before",
+   "success": false,
+   "seed": 3,
+   "src": "videos/sim/robopro/put_cup_on_coaster/v8__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": 40002,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/base__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": 40002,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v1__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": 40002,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v1__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": 40002,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v4__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": 40002,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v4__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v7",
+   "kind": "after",
+   "success": true,
+   "seed": 40002,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v7__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v7",
+   "kind": "before",
+   "success": false,
+   "seed": 40002,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v7__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v8",
+   "kind": "after",
+   "success": false,
+   "seed": 40005,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v8__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v8",
+   "kind": "before",
+   "success": false,
+   "seed": 40002,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v8__before.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v9",
+   "kind": "after",
+   "success": false,
+   "seed": 40005,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v9__after.mp4"
+  },
+  {
+   "bench": "robopro",
+   "task": "put_spoon_on_plate_ks",
+   "variation": "v9",
+   "kind": "before",
+   "success": false,
+   "seed": 40002,
+   "src": "videos/sim/robopro/put_spoon_on_plate_ks/v9__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/base__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v12",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v12__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v13",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v13__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v13",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v13__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v16",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v16__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v16",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v16__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v17",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v17__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v17",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v17__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v1__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v1__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v20",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v20__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v20",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v20__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v5__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v5__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v7",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v7__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v7",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v7__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v8",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v8__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "hanging_mug",
+   "variation": "v8",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/hanging_mug/v8__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/base__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v10",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v10__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v10",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v10__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v11",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v11__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v11",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v11__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v12",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v12__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v12",
+   "kind": "before",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v12__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v1__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v1",
+   "kind": "before",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v1__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v3",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v3__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v3__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v4",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v4__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v4__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v5__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v5__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v6",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v6__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v6",
+   "kind": "before",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v6__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v7",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v7__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v7",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v7__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v8",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v8__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v8",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v8__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v9",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v9__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "put_object_cabinet",
+   "variation": "v9",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/put_object_cabinet/v9__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/base__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v10",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v10__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v10",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v10__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v1__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v1__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v2__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v2",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v2__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v3__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v3__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v8",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v8__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v8",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v8__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v9",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v9__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "scan_object",
+   "variation": "v9",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/scan_object/v9__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/base__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v11",
+   "kind": "after",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v11__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v11",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v11__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v12",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v12__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v12",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v12__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v1__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v1",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v1__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v3__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v3__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v4__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v4__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v5__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "stack_blocks_three",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/stack_blocks_three/v5__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "base",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/base__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v1",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v1__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v1",
+   "kind": "before",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v1__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v2",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v2__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v2",
+   "kind": "before",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v2__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v3",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v3__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v3",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v3__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v4",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v4__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v4",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v4__before.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v5",
+   "kind": "after",
+   "success": true,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v5__after.mp4"
+  },
+  {
+   "bench": "robotwin",
+   "task": "turn_switch",
+   "variation": "v5",
+   "kind": "before",
+   "success": false,
+   "seed": null,
+   "src": "videos/sim/robotwin/turn_switch/v5__before.mp4"
+  }
+ ]
+}

@@ -1,0 +1,365 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "a5f93756",
+  "seed": 40002,
+  "n_frames": 1644,
+  "sim_steps": 6496,
+  "episode_sim_s": 25.98,
+  "captured_sim_s": 25.78,
+  "wall_clock_s": 380.53,
+  "raw_fps": 8.0,
+  "rt_fps": 63.76,
+  "error": null,
+  "matched_expected": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40002,
+    "success": true,
+    "sim_steps": 6496,
+    "wall_clock_s": 380.53,
+    "eval_wall_s": 383.7,
+    "error": null,
+    "last_error": "",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/base_20261026-155430/seed40002.mp4"
+   }
+  ],
+  "file": "base__after.mp4"
+ },
+ {
+  "variation": "v1",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "b4b87fdd",
+  "seed": 40002,
+  "n_frames": 1434,
+  "sim_steps": 5520,
+  "episode_sim_s": 22.08,
+  "captured_sim_s": 21.88,
+  "wall_clock_s": 675.52,
+  "raw_fps": 8.0,
+  "rt_fps": 65.539,
+  "error": null,
+  "matched_expected": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40002,
+    "success": false,
+    "sim_steps": 5520,
+    "wall_clock_s": 675.52,
+    "eval_wall_s": 678.5,
+    "error": null,
+    "last_error": "",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v1_20261026-160054/seed40002.mp4"
+   }
+  ],
+  "file": "v1__before.mp4"
+ },
+ {
+  "variation": "v1",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "a5f93756",
+  "seed": 40002,
+  "n_frames": 1665,
+  "sim_steps": 6584,
+  "episode_sim_s": 26.34,
+  "captured_sim_s": 26.14,
+  "wall_clock_s": 716.62,
+  "raw_fps": 8.0,
+  "rt_fps": 63.705,
+  "error": null,
+  "matched_expected": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40002,
+    "success": true,
+    "sim_steps": 6584,
+    "wall_clock_s": 716.62,
+    "eval_wall_s": 719.9,
+    "error": null,
+    "last_error": "",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v1_20261026-161212/seed40002.mp4"
+   }
+  ],
+  "file": "v1__after.mp4"
+ },
+ {
+  "variation": "v4",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "51c49d6b",
+  "seed": 40002,
+  "n_frames": 553,
+  "sim_steps": 1850,
+  "episode_sim_s": 7.4,
+  "captured_sim_s": 7.2,
+  "wall_clock_s": 301.85,
+  "raw_fps": 8.0,
+  "rt_fps": 76.806,
+  "error": null,
+  "matched_expected": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40002,
+    "success": false,
+    "sim_steps": 1850,
+    "wall_clock_s": 301.85,
+    "eval_wall_s": 305.0,
+    "error": null,
+    "last_error": "target [-0.322, -0.186, 0.718] outside the workspace {'x': (-0.7, 0.7), 'y': (-0.5, 0.45), 'z': (0.74, 1.4)}",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v4_20261026-162413/seed40002.mp4"
+   }
+  ],
+  "file": "v4__before.mp4"
+ },
+ {
+  "variation": "v4",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "a5f93756",
+  "seed": 40002,
+  "n_frames": 1734,
+  "sim_steps": 6837,
+  "episode_sim_s": 27.35,
+  "captured_sim_s": 27.15,
+  "wall_clock_s": 665.5,
+  "raw_fps": 8.0,
+  "rt_fps": 63.872,
+  "error": null,
+  "matched_expected": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40002,
+    "success": true,
+    "sim_steps": 6837,
+    "wall_clock_s": 665.5,
+    "eval_wall_s": 668.7,
+    "error": null,
+    "last_error": "target [-0.326, -0.178, 0.718] outside the workspace {'x': (-0.7, 0.7), 'y': (-0.5, 0.45), 'z': (0.74, 1.4)}",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v4_20261026-162918/seed40002.mp4"
+   }
+  ],
+  "file": "v4__after.mp4"
+ },
+ {
+  "variation": "v7",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "9dda62dd",
+  "seed": 40002,
+  "n_frames": 3936,
+  "sim_steps": 16268,
+  "episode_sim_s": 65.07,
+  "captured_sim_s": 64.87,
+  "wall_clock_s": 909.85,
+  "raw_fps": 8.0,
+  "rt_fps": 60.673,
+  "error": null,
+  "matched_expected": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40002,
+    "success": false,
+    "sim_steps": 16268,
+    "wall_clock_s": 909.85,
+    "eval_wall_s": 913.1,
+    "error": null,
+    "last_error": "",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v7_20261026-155450/seed40002.mp4"
+   }
+  ],
+  "file": "v7__before.mp4"
+ },
+ {
+  "variation": "v7",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "a5f93756",
+  "seed": 40002,
+  "n_frames": 2617,
+  "sim_steps": 10714,
+  "episode_sim_s": 42.86,
+  "captured_sim_s": 42.66,
+  "wall_clock_s": 883.38,
+  "raw_fps": 8.0,
+  "rt_fps": 61.351,
+  "error": null,
+  "matched_expected": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40002,
+    "success": true,
+    "sim_steps": 10714,
+    "wall_clock_s": 883.38,
+    "eval_wall_s": 886.6,
+    "error": null,
+    "last_error": "",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v7_20261026-161003/seed40002.mp4"
+   }
+  ],
+  "file": "v7__after.mp4"
+ },
+ {
+  "variation": "v8",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "a5f93756",
+  "seed": 40002,
+  "n_frames": 6747,
+  "sim_steps": 25587,
+  "episode_sim_s": 102.35,
+  "captured_sim_s": 102.15,
+  "wall_clock_s": 1509.51,
+  "raw_fps": 8.0,
+  "rt_fps": 66.051,
+  "error": null,
+  "matched_expected": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40002,
+    "success": false,
+    "sim_steps": 25587,
+    "wall_clock_s": 1509.51,
+    "eval_wall_s": 1512.6,
+    "error": null,
+    "last_error": "linear move stopped at 2/6 steps: no collision-free path (unreachable, or blocked by an obstacle)",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v8_20261026-164027/seed40002.mp4"
+   }
+  ],
+  "file": "v8__before.mp4",
+  "notes": [
+   "v8 is unsolved: training could not repair it, so the final pipeline is the round-3 revert and 'before' and 'after' run the same code (a5f93756) by construction. Both failing is the expected shape of an unsolved variation, not a recording fault."
+  ]
+ },
+ {
+  "variation": "v8",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "a5f93756",
+  "seed": 40005,
+  "n_frames": 6785,
+  "sim_steps": 25766,
+  "episode_sim_s": 103.06,
+  "captured_sim_s": 102.86,
+  "wall_clock_s": 1052.39,
+  "raw_fps": 8.0,
+  "rt_fps": 65.961,
+  "error": null,
+  "matched_expected": false,
+  "offsets_planned": [
+   2
+  ],
+  "tries": [
+   {
+    "seed_offset": 2,
+    "seed": 40005,
+    "success": false,
+    "sim_steps": 25766,
+    "wall_clock_s": 1052.39,
+    "eval_wall_s": 1055.6,
+    "error": null,
+    "last_error": "linear move stopped at 2/6 steps: no collision-free path (unreachable, or blocked by an obstacle)",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v8_20261026-170550/seed40005.mp4"
+   }
+  ],
+  "file": "v8__after.mp4",
+  "notes": [
+   "v8 is unsolved: training could not repair it, so the final pipeline is the round-3 revert and 'before' and 'after' run the same code (a5f93756) by construction. Both failing is the expected shape of an unsolved variation, not a recording fault.",
+   "Only seed offset 2 was run (approved): offsets 0-1 would rerun the same code as the gate's frozen pipeline, which failed all 10 gate seeds (s_break 0.0), and offset 0 would duplicate the 'before' clip's seed. Offset 2 is the clip record_eval keeps when offsets 0-1 fail.",
+   "outcome did not match the expected one on any offset tried; left as it came out"
+  ]
+ },
+ {
+  "variation": "v9",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "a5f93756",
+  "seed": 40002,
+  "n_frames": 7872,
+  "sim_steps": 30000,
+  "episode_sim_s": 120.0,
+  "captured_sim_s": 120.0,
+  "wall_clock_s": 1831.58,
+  "raw_fps": 8.0,
+  "rt_fps": 65.6,
+  "error": "StepLimitExceeded: 30000 simulation steps",
+  "matched_expected": true,
+  "tries": [
+   {
+    "seed_offset": 0,
+    "seed": 40002,
+    "success": false,
+    "sim_steps": 30000,
+    "wall_clock_s": 1831.58,
+    "eval_wall_s": 1835.0,
+    "error": "StepLimitExceeded: 30000 simulation steps",
+    "last_error": "linear move stopped at 1/5 steps: no collision-free path (unreachable, or blocked by an obstacle)",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v9_20261026-162450/seed40002.mp4"
+   }
+  ],
+  "file": "v9__before.mp4",
+  "notes": [
+   "v9 is unsolved: training could not repair it, so the final pipeline is the round-3 revert and 'before' and 'after' run the same code (a5f93756) by construction. Both failing is the expected shape of an unsolved variation, not a recording fault."
+  ]
+ },
+ {
+  "variation": "v9",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "a5f93756",
+  "seed": 40005,
+  "n_frames": 7884,
+  "sim_steps": 30000,
+  "episode_sim_s": 120.0,
+  "captured_sim_s": 120.0,
+  "wall_clock_s": 1406.91,
+  "raw_fps": 8.0,
+  "rt_fps": 65.7,
+  "error": "StepLimitExceeded: 30000 simulation steps",
+  "matched_expected": false,
+  "offsets_planned": [
+   2
+  ],
+  "tries": [
+   {
+    "seed_offset": 2,
+    "seed": 40005,
+    "success": false,
+    "sim_steps": 30000,
+    "wall_clock_s": 1406.91,
+    "eval_wall_s": 1410.1,
+    "error": "StepLimitExceeded: 30000 simulation steps",
+    "last_error": "linear move stopped at 1/6 steps: no collision-free path (unreachable, or blocked by an obstacle)",
+    "raw_mp4": "benchmarks/robopro/logs/frames/put_spoon_on_plate_ks/v9_20261026-165535/seed40005.mp4"
+   }
+  ],
+  "file": "v9__after.mp4",
+  "notes": [
+   "v9 is unsolved: training could not repair it, so the final pipeline is the round-3 revert and 'before' and 'after' run the same code (a5f93756) by construction. Both failing is the expected shape of an unsolved variation, not a recording fault.",
+   "Only seed offset 2 was run (approved): offsets 0-1 would rerun the same code as the gate's frozen pipeline, which failed all 10 gate seeds (s_break 0.0), and offset 0 would duplicate the 'before' clip's seed. Offset 2 is the clip record_eval keeps when offsets 0-1 fail.",
+   "outcome did not match the expected one on any offset tried; left as it came out"
+  ]
+ }
+]

@@ -1,0 +1,322 @@
+{
+ "bench": "robopro",
+ "task": "put_cup_on_coaster",
+ "branch": "d-robopro-put_cup_on_coaster",
+ "branch_head": "24e8f06",
+ "final_pipeline": "d3f595c8",
+ "before_pipelines": {
+  "v1": {
+   "commit": "5676ba6",
+   "pipeline_blob": "bfbb69417674"
+  },
+  "v2": {
+   "commit": "c23560b",
+   "pipeline_blob": "7710512bb97e"
+  },
+  "v3": {
+   "commit": "8504800",
+   "pipeline_blob": "49759ec6a42e"
+  },
+  "v4": {
+   "commit": "4d65536",
+   "pipeline_blob": "25b6498d32c4"
+  },
+  "v6": {
+   "commit": "4d65536",
+   "pipeline_blob": "25b6498d32c4"
+  },
+  "v7": {
+   "commit": "f626b0a",
+   "pipeline_blob": "b7f04a11b6b6"
+  },
+  "v8": {
+   "commit": "f626b0a",
+   "pipeline_blob": "b7f04a11b6b6"
+  }
+ },
+ "before_pipeline_check": "each 'before' commit is the last pipeline.py commit before the gate time; its blob equals the gate's frozen_pipeline for all 7 gates",
+ "recorder": "website/tools/record_eval.py job list and match rule (1 seed, seed offsets 0..2 until 'before' fails and 'after' succeeds; else the last try is kept), run in 3 parallel lanes; eval.py --local 1",
+ "video_capture": "eval.py has no --video, so website/tools/patch_video_robotwin.py is applied in an uncommitted worktree. Head camera, 320x240. TWO capture groups (index.json `capture` per clip): `calls` = the first patch (036a839) plus 2 lines that log each frame's sim step: a frame after every public RobotAPI call and every 4th _step/_hold call, written at 8 fps; frames are unevenly spaced in sim time and some share a sim time. `steps50` = main's patch (58f1fef), one frame per 50 sim steps (0.2 s) written at 5 fps, i.e. real time, with one change for this backend: the step count is the backend's own api.steps, because RoboPRO's _hold(arm, n) calls _step(n) and both are wrapped (the patch's nsteps() would add 1 per positional _hold call on top). Clips started before the switch use `calls`, later ones `steps50`. Every clip has per-frame sim steps in raw/<clip>.frames.json (steps50 clips also have the patch's own .steps.json).",
+ "dt": 0.004,
+ "dt_source": "RoboPRO bench_envs/_bench_base_task.py: scene.set_timestep(kwargs.get('timestep', 1/250)); the backend passes no timestep and the task config sets none; api.py DT = 1/250 agrees",
+ "raw": "raw/<vid>__<kind>.mp4: the patch's output unchanged; `calls` clips at 8 fps (play ~9x slower than sim time, unevenly), `steps50` clips at 5 fps (real time); raw_fps per clip",
+ "realtime": "realtime/<vid>__<kind>.mp4: the same frames on a uniform 25 fps sim-time grid (tick k shows the latest frame grabbed at or before k/25 s); plays in sim time for both capture groups (steps50 frames repeat 5x)",
+ "fields": "sim_steps, episode_sim_s = sim_steps*dt, n_frames, raw_fps, rt_fps = n_frames/episode_sim_s (average rate; not used for realtime/), frame_gap_sim_s_median/_max, sim_s_after_last_frame, rt_grid_fps, rt_n_frames, wall_clock_s (episode wall clock incl. scene reset, on a GPU shared by several sims; not used for timing)",
+ "settle": "after the pipeline returns, eval runs 50 settle steps (0.2 s) before the success check; the settle is a wrapped _hold, so it can appear in the clip; sim_s_after_last_frame says how much sim time the last frame misses",
+ "unsolved": "v4 (cup lying on its side) and v7 (cup at the back of the table, coaster at the front on the other side) passed the gate, i.e. they broke the pipeline, but were not recovered within the repair budget (v4 best 0.7 over 6 repairs; v7 0.3 after 1 repair). Their 'after' clips run the final pipeline and are expected to fail. v7's pinned layout puts the cup inside the bookcase footprint on 5 of 10 seeds, a flaw in the variation itself.",
+ "success_check": "cup within 2 cm of the coaster centre in x and in y, both grippers open. The check is xy only: a cup lying on its side, or tilted, counts if its centre ends over the coaster, so a v4 clip can be a success without the cup standing upright",
+ "capture_seam": "The set mixes two capture groups (see video_capture and each clip's `capture`). In realtime/ every clip plays in sim time at 25 fps, so the seam is only a difference in temporal detail (calls clips have more frames per second of motion). In raw/ the seam is visible: calls clips play ~9x slow and unevenly at 8 fps, steps50 clips in real time at 5 fps. Ship realtime/ for a uniform set.",
+ "mismatches": [
+  "v4__after"
+ ],
+ "tries": [
+  {
+   "variation": "base",
+   "kind": "after",
+   "seed_offset": 0,
+   "success": true,
+   "pipeline": "d3f595c8",
+   "seed": 0,
+   "steps": 4636,
+   "episode_wall_s": 183.17,
+   "error": "",
+   "wall_s": 186
+  },
+  {
+   "variation": "v1",
+   "kind": "before",
+   "seed_offset": 0,
+   "success": false,
+   "pipeline": "5676ba63",
+   "seed": 0,
+   "steps": 30000,
+   "episode_wall_s": 1762.84,
+   "error": "StepLimitExceeded: 30000 simulation steps",
+   "wall_s": 1766
+  },
+  {
+   "variation": "v2",
+   "kind": "before",
+   "seed_offset": 0,
+   "success": false,
+   "pipeline": "c23560b6",
+   "seed": 0,
+   "steps": 30000,
+   "episode_wall_s": 2040.9,
+   "error": "StepLimitExceeded: 30000 simulation steps",
+   "wall_s": 2044
+  },
+  {
+   "variation": "v1",
+   "kind": "after",
+   "seed_offset": 0,
+   "success": true,
+   "pipeline": "d3f595c8",
+   "seed": 0,
+   "steps": 3886,
+   "episode_wall_s": 497.61,
+   "error": "",
+   "wall_s": 501
+  },
+  {
+   "variation": "v2",
+   "kind": "after",
+   "seed_offset": 0,
+   "success": true,
+   "pipeline": "d3f595c8",
+   "seed": 0,
+   "steps": 9262,
+   "episode_wall_s": 963.95,
+   "error": "no collision-free path (unreachable, or blocked by an obstacle)",
+   "wall_s": 967
+  },
+  {
+   "variation": "v4",
+   "kind": "before",
+   "seed_offset": 0,
+   "success": false,
+   "pipeline": "4d655364",
+   "seed": 0,
+   "steps": 30000,
+   "episode_wall_s": 921.61,
+   "error": "StepLimitExceeded: 30000 simulation steps",
+   "wall_s": 925
+  },
+  {
+   "variation": "v4",
+   "kind": "after",
+   "seed_offset": 0,
+   "success": false,
+   "pipeline": "d3f595c8",
+   "seed": null,
+   "steps": null,
+   "episode_wall_s": null,
+   "error": null,
+   "wall_s": 1,
+   "skipped": "one-offset rule: stopped at start"
+  },
+  {
+   "variation": "v4",
+   "kind": "after",
+   "seed_offset": 1,
+   "success": false,
+   "pipeline": "d3f595c8",
+   "seed": null,
+   "steps": null,
+   "episode_wall_s": null,
+   "error": null,
+   "wall_s": 1,
+   "skipped": "one-offset rule: stopped at start"
+  },
+  {
+   "variation": "v3",
+   "kind": "before",
+   "seed_offset": 0,
+   "success": false,
+   "pipeline": "8504800e",
+   "seed": 0,
+   "steps": 30000,
+   "episode_wall_s": 2098.59,
+   "error": "StepLimitExceeded: 30000 simulation steps",
+   "wall_s": 2102
+  },
+  {
+   "variation": "v3",
+   "kind": "after",
+   "seed_offset": 0,
+   "success": true,
+   "pipeline": "d3f595c8",
+   "seed": 0,
+   "steps": 5000,
+   "episode_wall_s": 283.42,
+   "error": "",
+   "wall_s": 287
+  },
+  {
+   "variation": "v4",
+   "kind": "after",
+   "seed_offset": 2,
+   "success": false,
+   "pipeline": "d3f595c8",
+   "seed": 3,
+   "steps": 30000,
+   "episode_wall_s": 775.27,
+   "error": "StepLimitExceeded: 30000 simulation steps",
+   "wall_s": 778
+  },
+  {
+   "variation": "v6",
+   "kind": "before",
+   "seed_offset": 0,
+   "success": false,
+   "pipeline": "4d655364",
+   "seed": 0,
+   "steps": 30000,
+   "episode_wall_s": 732.76,
+   "error": "StepLimitExceeded: 30000 simulation steps",
+   "wall_s": 736
+  },
+  {
+   "variation": "v7",
+   "kind": "before",
+   "seed_offset": 0,
+   "success": true,
+   "pipeline": "f626b0a6",
+   "seed": 0,
+   "steps": 7456,
+   "episode_wall_s": 312.31,
+   "error": "no collision-free path (unreachable, or blocked by an obstacle)",
+   "wall_s": 315
+  },
+  {
+   "variation": "v6",
+   "kind": "after",
+   "seed_offset": 0,
+   "success": true,
+   "pipeline": "d3f595c8",
+   "seed": 0,
+   "steps": 17317,
+   "episode_wall_s": 370.22,
+   "error": "no collision-free path (unreachable, or blocked by an obstacle)",
+   "wall_s": 373
+  },
+  {
+   "variation": "v8",
+   "kind": "before",
+   "seed_offset": 0,
+   "success": true,
+   "pipeline": "f626b0a6",
+   "seed": 0,
+   "steps": 10819,
+   "episode_wall_s": 227.04,
+   "error": "no collision-free path (unreachable, or blocked by an obstacle)",
+   "wall_s": 230
+  },
+  {
+   "variation": "v7",
+   "kind": "before",
+   "seed_offset": 1,
+   "success": false,
+   "pipeline": "f626b0a6",
+   "seed": 1,
+   "steps": 30000,
+   "episode_wall_s": 595.02,
+   "error": "StepLimitExceeded: 30000 simulation steps",
+   "wall_s": 598
+  },
+  {
+   "variation": "v7",
+   "kind": "after",
+   "seed_offset": 0,
+   "success": false,
+   "pipeline": "d3f595c8",
+   "seed": null,
+   "steps": null,
+   "episode_wall_s": null,
+   "error": null,
+   "wall_s": 0,
+   "skipped": "one-offset rule: stopped at start"
+  },
+  {
+   "variation": "v7",
+   "kind": "after",
+   "seed_offset": 1,
+   "success": false,
+   "pipeline": "d3f595c8",
+   "seed": null,
+   "steps": null,
+   "episode_wall_s": null,
+   "error": null,
+   "wall_s": 1,
+   "skipped": "one-offset rule: stopped at start"
+  },
+  {
+   "variation": "v8",
+   "kind": "before",
+   "seed_offset": 1,
+   "success": true,
+   "pipeline": "f626b0a6",
+   "seed": 1,
+   "steps": 20868,
+   "episode_wall_s": 254.37,
+   "error": "no collision-free path (unreachable, or blocked by an obstacle)",
+   "wall_s": 257
+  },
+  {
+   "variation": "v7",
+   "kind": "after",
+   "seed_offset": 2,
+   "success": true,
+   "pipeline": "d3f595c8",
+   "seed": 3,
+   "steps": 7291,
+   "episode_wall_s": 159.62,
+   "error": "no collision-free path (unreachable, or blocked by an obstacle)",
+   "wall_s": 162
+  },
+  {
+   "variation": "v8",
+   "kind": "before",
+   "seed_offset": 2,
+   "success": false,
+   "pipeline": "f626b0a6",
+   "seed": 3,
+   "steps": 30000,
+   "episode_wall_s": 301.23,
+   "error": "StepLimitExceeded: 30000 simulation steps",
+   "wall_s": 304
+  },
+  {
+   "variation": "v8",
+   "kind": "after",
+   "seed_offset": 0,
+   "success": true,
+   "pipeline": "d3f595c8",
+   "seed": 0,
+   "steps": 10813,
+   "episode_wall_s": 145.34,
+   "error": "no collision-free path (unreachable, or blocked by an obstacle)",
+   "wall_s": 148
+  }
+ ]
+}

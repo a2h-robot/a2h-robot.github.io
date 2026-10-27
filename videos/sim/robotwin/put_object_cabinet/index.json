@@ -1,0 +1,163 @@
+[
+ {
+  "variation": "base",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v1",
+  "kind": "before",
+  "seed_offset": 2,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v1",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v3",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v3",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v4",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v4",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v5",
+  "kind": "before",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v5",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v6",
+  "kind": "before",
+  "seed_offset": 2,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v6",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v7",
+  "kind": "before",
+  "seed_offset": 1,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v7",
+  "kind": "after",
+  "seed_offset": 0,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v8",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v8",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v9",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v9",
+  "kind": "after",
+  "seed_offset": 1,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v10",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v10",
+  "kind": "after",
+  "seed_offset": 1,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v11",
+  "kind": "before",
+  "seed_offset": 0,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v11",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": false,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v12",
+  "kind": "before",
+  "seed_offset": 2,
+  "success": true,
+  "pipeline": "32705aad"
+ },
+ {
+  "variation": "v12",
+  "kind": "after",
+  "seed_offset": 2,
+  "success": true,
+  "pipeline": "32705aad"
+ }
+]
