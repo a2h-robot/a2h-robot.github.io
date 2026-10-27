@@ -314,3 +314,5 @@ table.results th, table.results td { text-align: center; padding: 6px 8px; }
 table.results td:first-child { text-align: left; }
 table.results td.best { font-weight: 700; }
 table.results tr.avg td { border-top: 2px solid var(--line); font-weight: 600; }
+
+.btn-disabled { opacity: .55; cursor: default; pointer-events: none; }
