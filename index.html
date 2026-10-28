@@ -187,10 +187,18 @@ return R</pre>
 <section id="real">
   <h2>Real-robot evaluation</h2>
   <div class="realintro">
+  <div class="realtext">
   <p>A UR5e arm with a Robotiq 2F-140 gripper and three RealSense cameras. Four tasks, each testing one challenge. A fresh agent
   writes the program zero-shot; we compare no harness (Baseline), a harness from recursive self-improvement on the same training
   tasks (RSI Harness), and A<sup>2</sup>H. pass@1 is the success rate at the first attempt, pass@4 within four attempts; cost is the
   token cost in dollars.</p>
+  <ul class="tasklist">
+    <li><b>Hanging Mug</b> <span class="ch">Dynamics</span> hang a mug on a rotating holder</li>
+    <li><b>Plug Charger</b> <span class="ch">Pose</span> plug a charger into an inclined socket</li>
+    <li><b>Cup on Shelf</b> <span class="ch">Collision Avoidance</span> place cups and bowls on a cluttered shelf</li>
+    <li><b>Sort Marbles</b> <span class="ch">Perception</span> sort marbles under low light</li>
+  </ul>
+  </div>
   <figure class="realgrid"><img src="assets/fig_real_grid.png" alt="The four real-robot tasks: Hanging Mug, Plug Charger, Cup on Shelf, Sort Marbles"></figure>
   </div>
   <div class="tablewrap"><table class="results">

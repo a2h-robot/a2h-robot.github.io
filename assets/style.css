@@ -313,8 +313,13 @@ main > section + section { border-top: 0; }
 .paperfig img { width: 100%; height: auto; border-radius: 6px; background: #fff; }
 .paperfig.narrow img { max-width: 520px; }
 .realintro { display: flex; gap: 28px; align-items: flex-start; margin-bottom: 22px; }
-.realintro p { flex: 1 1 auto; margin-top: 0; color: var(--muted); }
-.realgrid { flex: 0 0 340px; margin: 0; }
+.realtext { flex: 1 1 auto; }
+.realtext p { margin-top: 0; color: var(--muted); }
+.tasklist { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; font-size: .92rem; }
+.tasklist li { padding: 8px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.tasklist .ch { display: inline-block; margin: 0 6px; padding: 1px 8px; border-radius: 999px; font-size: .78rem;
+  font-weight: 600; color: #fff; background: #64409a; }
+.realgrid { flex: 0 0 300px; margin: 0; }
 .realgrid img { width: 100%; height: auto; border-radius: 6px; display: block; }
 @media (max-width: 760px) { .realintro { flex-direction: column; } .realgrid { flex-basis: auto; width: 100%; max-width: 420px; } }
 table.results th, table.results td { text-align: center; padding: 6px 8px; }
@@ -325,10 +330,10 @@ table.results tr.avg td { border-top: 2px solid var(--line); font-weight: 600; }
 /* four tabs spread evenly */
 .subnav-in { justify-content: space-evenly; }
 .subnav a { flex: 0 0 auto; }
+@media (max-width: 760px) { .subnav-in { justify-content: flex-start; } }
 
 /* hero buttons with icons */
 .btn { display: inline-flex; align-items: center; gap: 7px; }
 .btn .ico { width: 17px; height: 17px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 2;
   stroke-linecap: round; stroke-linejoin: round; }
 .btn small { font-size: .78em; opacity: .8; }
-@media (max-width: 760px) { .subnav-in { justify-content: flex-start; } }
