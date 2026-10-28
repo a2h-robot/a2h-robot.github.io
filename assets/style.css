@@ -319,7 +319,7 @@ main > section + section { border-top: 0; }
 .tasklist li { padding: 8px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
 .tasklist .ch { display: inline-block; margin: 0 6px; padding: 1px 8px; border-radius: 999px; font-size: .78rem;
   font-weight: 600; color: #fff; background: #64409a; }
-.realgrid { flex: 0 0 300px; margin: 0; }
+.realgrid { flex: 0 0 250px; margin: 0; }
 .realgrid img { width: 100%; height: auto; border-radius: 6px; display: block; }
 @media (max-width: 760px) { .realintro { flex-direction: column; } .realgrid { flex-basis: auto; width: 100%; max-width: 420px; } }
 table.results th, table.results td { text-align: center; padding: 6px 8px; }
