@@ -547,33 +547,30 @@ function setupSectionTabs() {
   if (!nav) return;
   const links = [...nav.querySelectorAll("a")];
   const ids = links.map(a => a.getAttribute("href").slice(1));
-  const sections = id => document.getElementById(id);
-  // #tldr rides with Method's view: it is the one-paragraph summary plus the headline numbers.
-  const lead = $("#tldr");
+  const groups = { intro: ["tldr", "cite"], method: ["method"], design: ["clips", "training"], real: ["real"] };
+  const alias = { clips: "design", training: "design", cite: "intro", harness: "intro", tldr: "intro" };
+  const all = [...new Set(Object.values(groups).flat())];
 
   function show(id, push) {
+    id = alias[id] || id;
     const target = ids.includes(id) ? id : ids[0];
-    for (const i of ids) {
-      const el = sections(i);
-      if (el) el.hidden = i !== target;
+    for (const s of all) {
+      const el = document.getElementById(s);
+      if (el) el.hidden = !groups[target].includes(s);
     }
-    if (lead) lead.hidden = target !== ids[0];
     links.forEach((a, n) => {
       const on = ids[n] === target;
       a.classList.toggle("on", on);
       a.setAttribute("aria-current", on ? "page" : "false");
     });
     if (push && location.hash !== "#" + target) history.replaceState(null, "", "#" + target);
-    // Starting a view half-scrolled reads as a broken page. "instant" is required: "auto" defers to
-    // the stylesheet's scroll-behavior: smooth, which animates and loses the race with a hash landing.
     window.scrollTo({ top: 0, behavior: "instant" });
   }
 
   links.forEach((a, n) => a.addEventListener("click", e => { e.preventDefault(); show(ids[n], true); }));
-  // Hero buttons that point at a section should switch to it rather than scroll into hidden content.
   for (const a of document.querySelectorAll('.buttons a[href^="#"]')) {
     const id = a.getAttribute("href").slice(1);
-    if (ids.includes(id)) a.addEventListener("click", e => { e.preventDefault(); show(id, true); });
+    a.addEventListener("click", e => { e.preventDefault(); show(id, true); });
   }
   window.addEventListener("hashchange", () => show(location.hash.slice(1), false));
   show(location.hash.slice(1), false);
