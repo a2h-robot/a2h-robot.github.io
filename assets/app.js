@@ -570,7 +570,12 @@ function setupSectionTabs() {
   links.forEach((a, n) => a.addEventListener("click", e => { e.preventDefault(); show(ids[n], true); }));
   for (const a of document.querySelectorAll('.buttons a[href^="#"]')) {
     const id = a.getAttribute("href").slice(1);
-    a.addEventListener("click", e => { e.preventDefault(); show(id, true); });
+    a.addEventListener("click", e => {
+      e.preventDefault();
+      show(id, true);
+      const el = document.getElementById(id);   // e.g. #cite: open its tab, then scroll down to it
+      if (el && !ids.includes(id)) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
   window.addEventListener("hashchange", () => show(location.hash.slice(1), false));
   show(location.hash.slice(1), false);
