@@ -315,11 +315,10 @@ main > section + section { border-top: 0; }
 .realintro { display: flex; gap: 28px; align-items: flex-start; margin-bottom: 22px; }
 .realtext { flex: 1 1 auto; }
 .realtext p { margin-top: 0; color: var(--muted); }
-.tasklist { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; font-size: .92rem; }
-.tasklist li { padding: 8px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
-.tasklist .ch { display: inline-block; margin: 0 6px; padding: 1px 8px; border-radius: 999px; font-size: .78rem;
-  font-weight: 600; color: #fff; background: #64409a; }
-.realgrid { flex: 0 0 250px; margin: 0; }
+.tasklist { margin: 10px 0 0; padding-left: 1.2em; color: var(--muted); }
+.tasklist li { margin: 2px 0; }
+.tasklist b { color: var(--ink); font-weight: 600; }
+.realgrid { flex: 0 0 auto; margin: 0; }
 .realgrid img { width: 100%; height: auto; border-radius: 6px; display: block; }
 @media (max-width: 760px) { .realintro { flex-direction: column; } .realgrid { flex-basis: auto; width: 100%; max-width: 420px; } }
 table.results th, table.results td { text-align: center; padding: 6px 8px; }

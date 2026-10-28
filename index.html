@@ -193,14 +193,35 @@ return R</pre>
   tasks (RSI Harness), and A<sup>2</sup>H. pass@1 is the success rate at the first attempt, pass@4 within four attempts; cost is the
   token cost in dollars.</p>
   <ul class="tasklist">
-    <li><b>Hanging Mug</b> <span class="ch">Dynamics</span> hang a mug on a rotating holder</li>
-    <li><b>Plug Charger</b> <span class="ch">Pose</span> plug a charger into an inclined socket</li>
-    <li><b>Cup on Shelf</b> <span class="ch">Collision Avoidance</span> place cups and bowls on a cluttered shelf</li>
-    <li><b>Sort Marbles</b> <span class="ch">Perception</span> sort marbles under low light</li>
+    <li><b>Hanging Mug</b> (Dynamics): hang a mug on a rotating holder</li>
+    <li><b>Plug Charger</b> (Pose): plug a charger into an inclined socket</li>
+    <li><b>Cup on Shelf</b> (Collision Avoidance): place cups and bowls on a cluttered shelf</li>
+    <li><b>Sort Marbles</b> (Perception): sort marbles under low light</li>
   </ul>
   </div>
   <figure class="realgrid"><img src="assets/fig_real_grid.png" alt="The four real-robot tasks: Hanging Mug, Plug Charger, Cup on Shelf, Sort Marbles"></figure>
   </div>
+  <script>
+  (() => {
+    const text = document.querySelector("#real .realtext"), fig = document.querySelector("#real .realgrid");
+    if (!text || !fig) return;
+    // Square grid exactly as tall as the text column. Widening the grid narrows the text and makes it taller, so
+    // bisect on the grid side s (200-340 px) for text height == s instead of feeding one into the other.
+    const fit = () => {
+      if (getComputedStyle(fig.parentElement).flexDirection !== "row" || !text.offsetWidth) { fig.style.width = ""; return; }
+      let lo = 200, hi = 340;
+      for (let i = 0; i < 12; i++) {
+        const s = (lo + hi) / 2;
+        fig.style.width = s + "px";
+        if (text.offsetHeight > s) lo = s; else hi = s;
+      }
+      fig.style.width = Math.round(hi) + "px";
+    };
+    let t;
+    new ResizeObserver(() => { clearTimeout(t); t = setTimeout(fit, 50); }).observe(fig.parentElement.parentElement);
+    addEventListener("load", fit);
+  })();
+  </script>
   <div class="tablewrap"><table class="results">
 <thead><tr><th rowspan="2">Task</th><th colspan="3">Baseline</th><th colspan="3">RSI Harness</th><th colspan="3">A<sup>2</sup>H</th></tr>
 <tr><th>pass@1</th><th>pass@4</th><th>Cost ($)</th><th>pass@1</th><th>pass@4</th><th>Cost ($)</th><th>pass@1</th><th>pass@4</th><th>Cost ($)</th></tr></thead>
