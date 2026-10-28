@@ -299,11 +299,10 @@ main > section + section { border-top: 0; }
 .demonote { color: var(--muted); max-width: 68ch; margin: 0 0 1rem; }
 .demotask { font-size: 1rem; margin: 1.4rem 0 .6rem; }
 .democount { color: var(--muted); font-weight: 400; font-size: .85rem; margin-left: .4rem; }
-.demogrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-@media (max-width: 720px) { .demogrid { grid-template-columns: repeat(2, 1fr); } }
+.demogrid { display: grid; grid-template-columns: 1fr; gap: 14px; }
 .demoname { font-weight: 600; }
 .democlip { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
-.democlip video { display: block; width: 100%; aspect-ratio: 426 / 960; background: #000; }
+.democlip video { display: block; width: 100%; aspect-ratio: 1278 / 320; background: #000; }
 .democlip figcaption { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; font-size: .82rem; }
 .badge { font-weight: 600; padding: 2px 10px; border-radius: 999px; }
 .badge.ok { color: var(--ok); background: var(--ok-soft); }
