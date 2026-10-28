@@ -302,3 +302,6 @@ table.results td.best { font-weight: 700; }
 table.results tr.avg td { border-top: 2px solid var(--line); font-weight: 600; }
 
 .btn-disabled { opacity: .55; cursor: default; pointer-events: none; }
+
+/* four tabs spread evenly across the bar */
+.subnav a { flex: 1 1 0; text-align: center; white-space: nowrap; }
