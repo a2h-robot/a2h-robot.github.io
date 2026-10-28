@@ -303,5 +303,6 @@ table.results tr.avg td { border-top: 2px solid var(--line); font-weight: 600; }
 
 .btn-disabled { opacity: .55; cursor: default; pointer-events: none; }
 
-/* four tabs spread evenly across the bar */
-.subnav a { flex: 1 1 0; text-align: center; white-space: nowrap; }
+/* four tabs spread evenly across the bar: equal gaps between and around them */
+.subnav-in { justify-content: space-evenly; }
+.subnav a { flex: 0 0 auto; }
