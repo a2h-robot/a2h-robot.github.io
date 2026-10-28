@@ -303,6 +303,16 @@ main > section + section { border-top: 0; }
 .demogrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 @media (max-width: 760px) { .demogrid { grid-template-columns: repeat(2, 1fr); } }
 .demoname { font-weight: 600; }
+.democlip .why { margin: 0; padding: 8px 10px 4px; font-size: .8rem; line-height: 1.4; color: var(--ink); }
+.democlip .stages { list-style: none; margin: 0; padding: 4px 6px 8px; font-size: .76rem; }
+.democlip .stages button { all: unset; box-sizing: border-box; display: flex; gap: 6px; width: 100%; padding: 3px 4px;
+  border-radius: 5px; cursor: pointer; color: var(--muted); line-height: 1.3; }
+.democlip .stages button:hover { background: var(--code); color: var(--ink); }
+.democlip .stages button:focus-visible { outline: 2px solid var(--accent); }
+.democlip .stages .st { flex: 0 0 auto; font-variant-numeric: tabular-nums; opacity: .7; }
+.democlip .stages li.now button { color: var(--ink); background: var(--code); font-weight: 600; }
+.democlip .stages li.failst button { color: var(--bad); }
+.democlip .stages li.failst.now button { background: var(--bad-soft); }
 .democlip { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .democlip video { display: block; width: 100%; aspect-ratio: 426 / 960; background: #000; }
 .democlip figcaption { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; font-size: .82rem; }
